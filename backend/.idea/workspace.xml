@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41e19b3d-442a-4d2f-b15c-c988fae8ce32" name="Changes" comment="" />
+    <list default="true" id="41e19b3d-442a-4d2f-b15c-c988fae8ce32" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsapp/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/whatsapp/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsapp/whatsapp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/whatsapp/whatsapp/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
