@@ -5,7 +5,7 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 from django.contrib.auth.models import _user_has_perm
 from django.contrib.auth.models import _user_has_module_perms
-
+from random import randint
 # typing
 from typing import Union
 from typing import List
@@ -42,21 +42,21 @@ class CustomUser(AbstractBaseUser):
     username = models.CharField(max_length=30, null=False)
     phone_number = models.CharField(max_length=15, unique=True, null=False)
     password = None
+    creation_date = models.DateTimeField(default=timezone.now, null=False)
     is_active = models.BooleanField(default=True, null=False)
     is_staff = models.BooleanField(default=False, null=False)
     is_admin = models.BooleanField(default=False, null=False)
 
-    object = CustomUserManager()
+    objects = CustomUserManager()
 
     USERNAME_FIELD = 'phone_number'
     REQUIRED_FIELDS = ['username']
 
     def exists(self, phone_number: str) -> Union[Tuple['CustomUser', bool], Tuple[None, bool]]:
         try:
-            return (CustomUser.object.get(phone_number=phone_number), True)
+            return (CustomUser.objects.get(phone_number=phone_number), True)
         except:
             return (None, False)
-
 
     def has_perm(self, perm: str, obj=None) -> bool:
         if self.is_active and self.is_admin:
@@ -75,6 +75,17 @@ class CustomUser(AbstractBaseUser):
 
     def __repr__(self):
         return f'{self.username} - {self.phone_number}'
+
+
+class OTP(models.Model):
+    user = models.OneToOneField(CustomUser, on_delete=models.DO_NOTHING, null=False)
+    otp_code = models.IntegerField(null=False)
+    attempts = models.IntegerField(default=0, null=False)
+    creation_date = models.DateTimeField(default=timezone.now, null=False)
+
+    @staticmethod
+    def create_otp(user):
+        return OTP.objects.create(user=user, otp_code=randint(100000, 999999))
 
 
 class Message(models.Model):
