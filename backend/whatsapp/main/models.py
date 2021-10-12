@@ -52,7 +52,8 @@ class CustomUser(AbstractBaseUser):
     USERNAME_FIELD = 'phone_number'
     REQUIRED_FIELDS = ['username']
 
-    def exists(self, phone_number: str) -> Union[Tuple['CustomUser', bool], Tuple[None, bool]]:
+    @staticmethod
+    def exists(phone_number: str) -> Union[Tuple['CustomUser', bool], Tuple[None, bool]]:
         try:
             return (CustomUser.objects.get(phone_number=phone_number), True)
         except:
