@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9ea5088-172f-4e59-a192-fa0809cb19bd" name="Changes" comment="build(cross_platform): update Dart and git build files">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_10_2021_23_35_[Changes]/shelved.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/whatsapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/whatsapp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f9ea5088-172f-4e59-a192-fa0809cb19bd" name="Changes" comment="fix(cross_platform): undetected by git" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,9 +46,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -63,9 +59,14 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/flutter/lib/main.dart" />
+      <option name="filePath" value="$PROJECT_DIR$/cross_platform/lib/main.dart" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -93,6 +94,7 @@
       <workItem from="1634181142700" duration="2597000" />
       <workItem from="1634250802806" duration="29000" />
       <workItem from="1634250907619" duration="578000" />
+      <workItem from="1634251909102" duration="374000" />
     </task>
     <task id="LOCAL-00001" summary="feat(cross_platform): create main app">
       <created>1633818853654</created>
@@ -108,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634181217994</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix(cross_platform): undetected by git">
+      <created>1634252278540</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634252278540</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +150,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(cross_platform): create main app" />
     <MESSAGE value="build(cross_platform): update Dart and git build files" />
-    <option name="LAST_COMMIT_MESSAGE" value="build(cross_platform): update Dart and git build files" />
+    <MESSAGE value="fix(cross_platform): undetected by git" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(cross_platform): undetected by git" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
