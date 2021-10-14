@@ -91,7 +91,7 @@ class OTP(models.Model):
 
 class Message(models.Model):
     sender = models.ForeignKey(CustomUser, related_name='sender_set', on_delete=models.DO_NOTHING, null=False)
-    receiver = models.ForeignKey(CustomUser, related_name='receiver_set', on_delete=models.DO_NOTHING, null=False)
+    recipient = models.ForeignKey(CustomUser, related_name='recipient_set', on_delete=models.DO_NOTHING, null=False)
     content = models.CharField(max_length=250, null=False)
     creation_date = models.DateTimeField(default=timezone.now, null=False)
     delivered = models.BooleanField(default=False, null=False)
@@ -99,5 +99,5 @@ class Message(models.Model):
     deleted = models.BooleanField(default=False, null=False)
 
     def __repr__(self):
-        # return f'{self.sender.phone_number} - {self.receiver.phone_number}'
-        return f'{self.sender.useername} ({self.sender.phone_number}) -> {self.receiver.useername} ({self.receiver.phone_number})'
+        # return f'{self.sender.phone_number} - {self.recipient.phone_number}'
+        return f'{self.sender.useername} ({self.sender.phone_number}) -> {self.recipient.useername} ({self.recipient.phone_number})'
