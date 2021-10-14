@@ -47,7 +47,7 @@ class CustomUser(AbstractBaseUser):
     password = None
     last_login = None
     creation_date = models.DateTimeField(default=timezone.now, null=False)
-    is_active = models.BooleanField(default=True, null=False)
+    is_active = models.BooleanField(default=False, null=False)
     is_staff = models.BooleanField(default=False, null=False)
     is_admin = models.BooleanField(default=False, null=False)
 
