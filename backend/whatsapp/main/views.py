@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from .serializers import CustomUserSerializers
 from .models import CustomUser
+from .models import OTP
 import re
 
 
@@ -40,6 +41,11 @@ class RegistrationView(CreateAPIView):
         else:
             serializer = CustomUserSerializers(data=request.data)
             if serializer.is_valid():
-                serializer.save()
+                user = serializer.save()
+                OTP.create_otp(user)
+            else:
+                response['error'] = 'error'
+                response['details'] = 'Phone number might be in use'
+                status_code = status.HTTP_406_NOT_ACCEPTABLE
 
         return Response(data=response, status=status_code)
