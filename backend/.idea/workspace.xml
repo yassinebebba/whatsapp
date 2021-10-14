@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="41e19b3d-442a-4d2f-b15c-c988fae8ce32" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whatsapp/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/whatsapp/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsapp/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/whatsapp/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsapp/whatsapp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/whatsapp/whatsapp/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsapp/whatsapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/whatsapp/whatsapp/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +73,8 @@
       <updated>1633811447052</updated>
       <workItem from="1633811448185" duration="16000" />
       <workItem from="1633811652791" duration="391000" />
-      <workItem from="1634069213029" duration="3097000" />
+      <workItem from="1634069213029" duration="4079000" />
+      <workItem from="1634215459003" duration="8599000" />
     </task>
     <servers />
   </component>
