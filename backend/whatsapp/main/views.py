@@ -1,3 +1,5 @@
+import re
+import os
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.generics import CreateAPIView
 from rest_framework.response import Response
@@ -5,11 +7,11 @@ from rest_framework import status
 from .serializers import CustomUserSerializers
 from .models import CustomUser
 from .models import OTP
-import re
 
 # twilio
-import twilio
+from twilio.rest import Client
 from twilio.base.exceptions import TwilioRestException
+
 
 class CustomUserViewSet(ModelViewSet):
     """
@@ -46,7 +48,22 @@ class RegistrationView(CreateAPIView):
             if serializer.is_valid():
                 user = serializer.save()
                 otp, _ = OTP.create_otp(user)
+
                 # send otp with twilio
+                account_sid = os.environ['TWILIO_ACCOUNT_SID']
+                auth_token = os.environ['TWILIO_AUTH_TOKEN']
+                twilio_phone_number = os.environ['TWILIO_PHONE_NUMBER']
+                client = Client(account_sid, auth_token)
+                try:
+                    client.messages.create(
+                        body=f'Welcome to Utopia! this is your code: {otp.otp_code}',
+                        from_=twilio_phone_number,
+                        to=request.data['phone_number']
+                    )
+                except TwilioRestException:
+                    response['error'] = 'invalid phone number'
+                    response['details'] = 'invalid phone number'
+                    status_code = status.HTTP_406_NOT_ACCEPTABLE
             else:
                 response['error'] = 'error'
                 response['details'] = 'Phone number might be in use'

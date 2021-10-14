@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41e19b3d-442a-4d2f-b15c-c988fae8ce32" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whatsapp/main/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/whatsapp/main/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/whatsapp/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/whatsapp/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +84,6 @@
     <servers />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/backend$tests.coverage" NAME="tests Coverage Results" MODIFIED="1634247660649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/whatsapp/main" />
+    <SUITE FILE_PATH="coverage/backend$tests.coverage" NAME="tests Coverage Results" MODIFIED="1634248138096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/whatsapp/main" />
   </component>
 </project>
