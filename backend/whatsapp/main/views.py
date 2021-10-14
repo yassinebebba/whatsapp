@@ -7,6 +7,9 @@ from .models import CustomUser
 from .models import OTP
 import re
 
+# twilio
+import twilio
+from twilio.base.exceptions import TwilioRestException
 
 class CustomUserViewSet(ModelViewSet):
     """
