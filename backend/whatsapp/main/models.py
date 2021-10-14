@@ -39,9 +39,13 @@ class CustomUserManager(BaseUserManager):
 
 
 class CustomUser(AbstractBaseUser):
+    class Meta:
+        db_table = 'custom_user'
+
     username = models.CharField(max_length=30, null=False)
     phone_number = models.CharField(max_length=15, unique=True, null=False)
     password = None
+    last_login = None
     creation_date = models.DateTimeField(default=timezone.now, null=False)
     is_active = models.BooleanField(default=True, null=False)
     is_staff = models.BooleanField(default=False, null=False)
@@ -79,6 +83,9 @@ class CustomUser(AbstractBaseUser):
 
 
 class OTP(models.Model):
+    class Meta:
+        db_table = 'otp'
+
     user = models.OneToOneField(CustomUser, on_delete=models.DO_NOTHING, null=False)
     otp_code = models.IntegerField(null=False)
     attempts = models.IntegerField(default=0, null=False)
@@ -86,10 +93,13 @@ class OTP(models.Model):
 
     @staticmethod
     def create_otp(user):
-        return OTP.objects.create(user=user, otp_code=randint(100000, 999999))
+        return OTP.objects.update_or_create(user=user, otp_code=randint(100000, 999999))
 
 
 class Message(models.Model):
+    class Meta:
+        db_table = 'message'
+
     sender = models.ForeignKey(CustomUser, related_name='sender_set', on_delete=models.DO_NOTHING, null=False)
     recipient = models.ForeignKey(CustomUser, related_name='recipient_set', on_delete=models.DO_NOTHING, null=False)
     content = models.CharField(max_length=250, null=False)

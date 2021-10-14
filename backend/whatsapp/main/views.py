@@ -42,7 +42,8 @@ class RegistrationView(CreateAPIView):
             serializer = CustomUserSerializers(data=request.data)
             if serializer.is_valid():
                 user = serializer.save()
-                OTP.create_otp(user)
+                otp, _ = OTP.create_otp(user)
+                # send otp with twilio
             else:
                 response['error'] = 'error'
                 response['details'] = 'Phone number might be in use'
