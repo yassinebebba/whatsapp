@@ -1,3 +1,4 @@
+import 'package:cross_platform/presentation/widgets/registration_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -8,11 +9,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'WhatsApp',
-        home: Scaffold(
-            appBar: AppBar(
-              title: const Text('Material Test Bar'),
-            ),
-            body: const Center(child: Text('test'))));
+        routes: {
+          "_": (context) {
+            return const RegistrationScreen();
+          }
+        });
   }
 }
