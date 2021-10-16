@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'WhatsApp',
         routes: {
-          "_": (context) {
+          "/": (context) {
             return const RegistrationScreen();
           }
         });
