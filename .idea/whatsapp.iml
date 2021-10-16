@@ -3,9 +3,9 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <excludeFolder url="file://$MODULE_DIR$/cross_platform/build" />
-      <excludeFolder url="file://$MODULE_DIR$/cross_platform/.pub" />
-      <excludeFolder url="file://$MODULE_DIR$/cross_platform/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter/.pub" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

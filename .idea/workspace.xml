@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9ea5088-172f-4e59-a192-fa0809cb19bd" name="Changes" comment="fix(cross_platform): undetected by git" />
+    <list default="true" id="f9ea5088-172f-4e59-a192-fa0809cb19bd" name="Changes" comment="refactor(screens): place individual screens -&gt; screens dir">
+      <change beforePath="$PROJECT_DIR$/.idea/whatsapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/whatsapp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/lib/presentation/screens/registration_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/presentation/screens/registration_screen.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,24 +53,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../orange-power-mob" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="flutter.settings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Dart" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter\lib\presentation\screens" />
+      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter\lib\presentation\widgets" />
       <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/cross_platform/lib/main.dart" />
+      <option name="filePath" value="$PROJECT_DIR$/flutter/lib/main.dart" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -94,7 +100,8 @@
       <workItem from="1634181142700" duration="2597000" />
       <workItem from="1634250802806" duration="29000" />
       <workItem from="1634250907619" duration="578000" />
-      <workItem from="1634251909102" duration="374000" />
+      <workItem from="1634251909102" duration="4082000" />
+      <workItem from="1634331842897" duration="18045000" />
     </task>
     <task id="LOCAL-00001" summary="feat(cross_platform): create main app">
       <created>1633818853654</created>
@@ -117,7 +124,91 @@
       <option name="project" value="LOCAL" />
       <updated>1634252278540</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix(cross_platform): undetected by git change folder -&gt; flutter">
+      <created>1634252555329</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1634252555329</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat(screens): add HomeScreen">
+      <created>1634256692124</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1634256692124</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix(screens): fix route">
+      <created>1634256869970</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1634256869970</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix(screens): route -&gt; HomeScreen">
+      <created>1634257049047</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1634257049047</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat(theme): add flutter_style">
+      <created>1634339274769</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1634339274769</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat(screens): add RegistrationScreen">
+      <created>1634339969310</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1634339969310</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat(main): add RegistrationScreen route to test api">
+      <created>1634342782922</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1634342782922</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix(main): route global key error &quot;_&quot; -&gt; &quot;/&quot;">
+      <created>1634343822326</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1634343822326</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat(screens): input field phone verification">
+      <created>1634345661982</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1634345661982</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat(screens): next button phone verification">
+      <created>1634345914621</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1634345914621</updated>
+    </task>
+    <task id="LOCAL-00014" summary="refactor(screens): create user api call">
+      <created>1634348457356</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1634348457356</updated>
+    </task>
+    <task id="LOCAL-00015" summary="refactor(screens): place individual screens -&gt; screens dir">
+      <created>1634348854262</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1634348854262</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,7 +242,19 @@
     <MESSAGE value="feat(cross_platform): create main app" />
     <MESSAGE value="build(cross_platform): update Dart and git build files" />
     <MESSAGE value="fix(cross_platform): undetected by git" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(cross_platform): undetected by git" />
+    <MESSAGE value="fix(cross_platform): undetected by git change folder -&gt; flutter" />
+    <MESSAGE value="feat(screens): add HomeScreen" />
+    <MESSAGE value="fix(screens): fix route" />
+    <MESSAGE value="fix(screens): route -&gt; HomeScreen" />
+    <MESSAGE value="feat(theme): add flutter_style" />
+    <MESSAGE value="feat(screens): add RegistrationScreen" />
+    <MESSAGE value="feat(main): add RegistrationScreen route to test api" />
+    <MESSAGE value="fix(main): route global key error &quot;_&quot; -&gt; &quot;/&quot;" />
+    <MESSAGE value="feat(screens): input field phone verification" />
+    <MESSAGE value="feat(screens): next button phone verification" />
+    <MESSAGE value="refactor(screens): create user api call" />
+    <MESSAGE value="refactor(screens): place individual screens -&gt; screens dir" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(screens): place individual screens -&gt; screens dir" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
