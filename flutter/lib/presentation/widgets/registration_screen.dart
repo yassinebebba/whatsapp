@@ -7,6 +7,29 @@ class RegistrationScreen extends StatelessWidget {
 
   get controller => null;
 
+  Future<String> createUser(String phoneNumber) async {
+    final String apiUrl = "";
+    final response = await http.post(Uri.parse(apiUrl), body: {
+      "phone_number": phoneNumber});
+    String token = response.headers.values.last;
+
+    if (response.statusCode == 200) {
+      Fluttertoast.showToast(msg: response.body);
+      context
+    , MaterialPageRoute(builder: (context) => HomeScreen());
+    } else if (response.statusCode == 400) {
+    Fluttertoast.showToast(msg: response.body);
+    } else if (response.statusCode == 412) {
+    Fluttertoast.showToast(msg: response.body);
+    } else if (response.statusCode == 500) {
+    Fluttertoast.showToast(msg: response.body);
+    }
+    return
+    null;
+  }
+
+  );
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,8 +66,8 @@ class RegistrationScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                       border: Border(
                           bottom: BorderSide(
-                    color: greenColor,
-                  ))),
+                            color: greenColor,
+                          ))),
                   child: Text(""),
                 ),
                 Expanded(
