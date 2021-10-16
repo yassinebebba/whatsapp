@@ -56,6 +56,17 @@ class RegistrationScreen extends StatelessWidget {
                     ),
                   ),
                 ),
+                Expanded(
+                    child: Align(
+                        alignment: Alignment.bottomCenter,
+                        child: MaterialButton(
+                            color: greenColor,
+                            onPressed: () => {},
+                            child: Text("Next",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  color: Colors.white,
+                                )))))
               ],
             ),
           ],
