@@ -67,12 +67,14 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 Icon(Icons.more_vert)
               ],
             ),
+            SizedBox(width: 30),
             const Text(
               "WhatsApp Clone will send and SMS message (carrier charges may apply) to verify your phone number. Enter your country code and phone number:",
               style: TextStyle(
                 fontSize: 16,
               ),
             ),
+            SizedBox(width: 30),
             ListTile(
                 onTap: _openCountryList, title: _buildDialogItem(_countryList)),
             Row(
@@ -111,5 +113,39 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         ),
       ),
     );
+  }
+
+  void _openCountryList() {
+    showDialog(
+        context: context,
+        builder: (_) => Theme(
+              data: Theme.of(context).copyWith(
+                primaryColor: primaryColor,
+              ),
+              child: CountryPickerDialog(
+                titlePadding: EdgeInsets.all(8.0),
+                searchCursorColor: Colors.black,
+                searchInputDecoration: InputDecoration(
+                  hintText: "Search",
+                ),
+                isSearchable: true,
+                title: Text("Select your phone code"),
+                onValuePicked: (Country country) {
+                  setState(() {
+                    _countryList = country;
+                    _countryCode = country.phoneCode;
+                  });
+                },
+                itemBuilder: _buildDialogItem,
+              ),
+            ));
+  }
+
+  Widget _buildDialogItem(Country country) {
+    return Row(children: <Widget>[
+      CountryPickerUtils.getDefaultFlagImage(country),
+      Text("+${country.phoneCode}"),
+      Text(country.name)
+    ]);
   }
 }
