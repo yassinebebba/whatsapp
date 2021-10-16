@@ -11,28 +11,40 @@ class RegistrationScreen extends StatefulWidget {
 
   get controller => null;
 
-  Future<String> createUser(String phoneNumber) async {
-    final String apiUrl = "";
-    final response = await http.post(Uri.parse(apiUrl), body: {
-      "phone_number": phoneNumber});
-    String token = response.headers.values.last;
+  @override
+  _RegistrationScreenState createState() => _RegistrationScreenState();
+}
 
-    if (response.statusCode == 200) {
-      Fluttertoast.showToast(msg: response.body);
-      context
-    , MaterialPageRoute(builder: (context) => HomeScreen());
-    } else if (response.statusCode == 400) {
-    Fluttertoast.showToast(msg: response.body);
-    } else if (response.statusCode == 412) {
-    Fluttertoast.showToast(msg: response.body);
-    } else if (response.statusCode == 500) {
-    Fluttertoast.showToast(msg: response.body);
-    }
-    return
-    null;
-  }
+class _RegistrationScreenState extends State<RegistrationScreen> {
+  static Country _countryList = CountryPickerUtils.getCountryByPhoneCode("44");
+  String _countryCode = _countryList.phoneCode;
+  String _phoneNum = "";
 
-  );
+  TextEditingController _phoneAuthController = TextEditingController();
+
+  // Future<String> createUser(String phoneNumber) async {
+  //   final String apiUrl = "";
+  //   final response =
+  //       await http.post(Uri.parse(apiUrl), body: {"phone_number": phoneNumber});
+  //   String token = response.headers.values.last;
+
+  //   if (response.statusCode == 200) {
+  //     Fluttertoast.showToast(msg: response.body);
+  //     context
+  //   , MaterialPageRoute(builder: (context) => HomeScreen());
+  //   } else if (response.statusCode == 400) {
+  //   Fluttertoast.showToast(msg: response.body);
+  //   } else if (response.statusCode == 412) {
+  //   Fluttertoast.showToast(msg: response.body);
+  //   } else if (response.statusCode == 500) {
+  //   Fluttertoast.showToast(msg: response.body);
+  //   }
+  //   return
+  //   null;
+  // }
+  //
+  // );
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -62,23 +74,22 @@ class RegistrationScreen extends StatefulWidget {
               ),
             ),
             ListTile(
-              onTap: () => {},
-            ),
+                onTap: _openCountryList, title: _buildDialogItem(_countryList)),
             Row(
               children: <Widget>[
                 Container(
                   decoration: BoxDecoration(
                       border: Border(
                           bottom: BorderSide(
-                            color: greenColor,
-                          ))),
+                    color: greenColor,
+                  ))),
                   child: Text(""),
                 ),
                 Expanded(
                   child: Container(
                     height: 40,
                     child: TextField(
-                      controller: controller,
+                      controller: _phoneAuthController,
                       decoration: InputDecoration(hintText: "Phone Number"),
                     ),
                   ),
