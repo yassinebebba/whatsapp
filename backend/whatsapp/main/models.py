@@ -91,7 +91,7 @@ class OTP(models.Model):
     class Meta:
         db_table = 'otp'
 
-    user = models.OneToOneField(CustomUser, on_delete=models.DO_NOTHING, null=False)
+    user = models.OneToOneField(CustomUser, on_delete=models.CASCADE, null=False)
     otp_code = models.IntegerField(null=False)
     attempts = models.IntegerField(default=0, null=False)
     creation_date = models.DateTimeField(default=timezone.now, null=False)
