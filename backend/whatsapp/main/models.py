@@ -1,8 +1,8 @@
 from django.contrib.auth.base_user import AbstractBaseUser
 from django.contrib.auth.base_user import BaseUserManager
 from django.db import models
+from django.core.exceptions import ObjectDoesNotExist
 from django.utils import timezone
-from django.contrib.auth.models import User
 from django.contrib.auth.models import _user_has_perm
 from django.contrib.auth.models import _user_has_module_perms
 from random import randint
@@ -60,7 +60,7 @@ class CustomUser(AbstractBaseUser):
     def exists(phone_number: str) -> Union[Tuple['CustomUser', bool], Tuple[None, bool]]:
         try:
             return (CustomUser.objects.get(phone_number=phone_number), True)
-        except:
+        except ObjectDoesNotExist:
             return (None, False)
 
     def activate(self) -> None:
@@ -95,6 +95,15 @@ class OTP(models.Model):
     otp_code = models.IntegerField(null=False)
     attempts = models.IntegerField(default=0, null=False)
     creation_date = models.DateTimeField(default=timezone.now, null=False)
+
+    @staticmethod
+    def is_valid(user: CustomUser, otp: int) -> bool:
+        try:
+            OTP.objects.get(user=user, otp=otp)
+            return True
+        except ObjectDoesNotExist:
+            return False
+
 
     @staticmethod
     def create_otp(user):
