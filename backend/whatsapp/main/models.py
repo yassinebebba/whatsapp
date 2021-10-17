@@ -99,11 +99,10 @@ class OTP(models.Model):
     @staticmethod
     def is_valid(user: CustomUser, otp: int) -> bool:
         try:
-            OTP.objects.get(user=user, otp=otp)
+            OTP.objects.get(user=user, otp_code=otp).delete()
             return True
         except ObjectDoesNotExist:
             return False
-
 
     @staticmethod
     def create_otp(user):

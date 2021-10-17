@@ -70,3 +70,48 @@ class RegistrationView(CreateAPIView):
                 status_code = status.HTTP_406_NOT_ACCEPTABLE
 
         return Response(data=response, status=status_code)
+
+
+class OTPValidationView(CreateAPIView):
+    """
+    Validates the user's OTP
+    """
+
+    def post(self, request, *args, **kwargs):
+        response: dict = {'details': 'success'}
+        status_code: int = status.HTTP_200_OK
+        if len(request.data) != 3:
+            response['error'] = 'not allowed'
+            response['details'] = 'fields `username`, `phone_number` and `otp`are required'
+            status_code = status.HTTP_406_NOT_ACCEPTABLE
+        elif not re.search('^[a-zA-Z_]{3,30}$', request.data['username']):
+            response['error'] = 'wrong information'
+            response['details'] = 'field `username` must be between 3 and 30 letters'
+            status_code = status.HTTP_406_NOT_ACCEPTABLE
+        elif not re.search('^\+[0-9]{7,15}$', request.data['phone_number']):
+            response['error'] = 'wrong information'
+            response['details'] = 'field `phone_number` must not be empty'
+            status_code = status.HTTP_406_NOT_ACCEPTABLE
+        elif not isinstance(request.data['otp'], int):
+            response['error'] = 'wrong information'
+            response['details'] = 'Invalid OTP'
+            status_code = status.HTTP_406_NOT_ACCEPTABLE
+        else:
+            user: CustomUser
+            (user, exists) = CustomUser.exists(request.data['phone_number'])
+
+            if exists:
+                if user.is_active:
+                    pass
+                elif OTP.is_valid(user, request.data['otp']):
+                    user.activate()
+                else:
+                    response['error'] = 'error'
+                    response['details'] = 'Invalid OTP'
+                    status_code = status.HTTP_406_NOT_ACCEPTABLE
+            else:
+                response['error'] = 'error'
+                response['details'] = 'Phone number does not exist'
+                status_code = status.HTTP_404_NOT_FOUND
+
+        return Response(data=response, status=status_code)
