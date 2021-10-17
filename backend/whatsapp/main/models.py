@@ -63,6 +63,11 @@ class CustomUser(AbstractBaseUser):
         except:
             return (None, False)
 
+    def activate(self) -> None:
+        self.is_active = True
+        self.save()
+        return None
+
     def has_perm(self, perm: str, obj=None) -> bool:
         if self.is_active and self.is_admin:
             return True
