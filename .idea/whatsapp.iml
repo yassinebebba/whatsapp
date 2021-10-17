@@ -6,10 +6,22 @@
       <excludeFolder url="file://$MODULE_DIR$/flutter/build" />
       <excludeFolder url="file://$MODULE_DIR$/flutter/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/flutter/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/.idea/dataSources" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/whatsapp/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter/android/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib64" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
     <orderEntry type="library" name="Dart Packages" level="project" />
+  </component>
+  <component name="PyDocumentationSettings">
+    <option name="format" value="PLAIN" />
+    <option name="myDocStringFormat" value="Plain" />
   </component>
 </module>
