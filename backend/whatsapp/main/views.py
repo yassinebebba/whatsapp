@@ -1,5 +1,7 @@
 import re
 import os
+
+from django.shortcuts import render
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.generics import CreateAPIView
 from rest_framework.response import Response
@@ -115,3 +117,12 @@ class OTPValidationView(CreateAPIView):
                 status_code = status.HTTP_404_NOT_FOUND
 
         return Response(data=response, status=status_code)
+
+
+def index(request):
+    return render(request, 'main/index.html')
+
+def room(request, room_name):
+    return render(request, 'main/room.html', {
+        'room_name': room_name
+    })
