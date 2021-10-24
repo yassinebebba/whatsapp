@@ -1,4 +1,4 @@
-import 'package:cross_platform/presentation/screens/registration_screen.dart';
+import 'package:cross_platform/presentation/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
         title: 'WhatsApp',
         routes: {
           "/": (context) {
-            return const RegistrationScreen();
+            return WelcomeScreen();
           }
         });
   }
