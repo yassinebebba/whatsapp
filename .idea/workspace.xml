@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9ea5088-172f-4e59-a192-fa0809cb19bd" name="Changes" comment="feat(django): activate()">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_10_2021_23_35_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_10_2021_23_43_[Changes]/shelved.patch" beforeDir="false" />
+    <list default="true" id="f9ea5088-172f-4e59-a192-fa0809cb19bd" name="Changes" comment="refactor(screens): WelcomeScreen add image|privacy policy message">
+      <change afterPath="$PROJECT_DIR$/flutter/lib/presentation/pages/phone_verification_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flutter/lib/presentation/screens/registration_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/presentation/screens/registration_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -57,30 +55,45 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JavaScript" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../orange-power-mob" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter" />
+      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter\lib" />
+      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\assets" />
       <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter\lib\presentation\screens" />
       <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter\lib\presentation\widgets" />
-      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Flutter.main.dart">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/flutter/lib/main.dart" />
       <method v="2" />
     </configuration>
+    <configuration name="scratch_1.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter.main.dart" />
+        <item itemvalue="Node.js.scratch_1.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -105,7 +118,11 @@
       <workItem from="1634331842897" duration="24909000" />
       <workItem from="1634412124949" duration="1246000" />
       <workItem from="1634413837101" duration="3884000" />
-      <workItem from="1635026125701" duration="34000" />
+      <workItem from="1635026125701" duration="2503000" />
+      <workItem from="1635101687619" duration="1687000" />
+      <workItem from="1635113580855" duration="2167000" />
+      <workItem from="1635128347132" duration="1392000" />
+      <workItem from="1635202836432" duration="6387000" />
     </task>
     <task id="LOCAL-00001" summary="feat(cross_platform): create main app">
       <created>1633818853654</created>
@@ -261,7 +278,28 @@
       <option name="project" value="LOCAL" />
       <updated>1634446522320</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="chore(IDE): update settings from previous merge of two projects">
+      <created>1635026493600</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1635026493600</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feat(screens): WelcomeScreen">
+      <created>1635116186715</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1635116186715</updated>
+    </task>
+    <task id="LOCAL-00025" summary="refactor(screens): WelcomeScreen add image|privacy policy message">
+      <created>1635207375817</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1635207375817</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +355,10 @@
     <MESSAGE value="feat(registration): add countrypicker utils, country code dropdown list" />
     <MESSAGE value="feat(registration): add openCountryList(), buildDialogItem widget" />
     <MESSAGE value="feat(django): activate()" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(django): activate()" />
+    <MESSAGE value="chore(IDE): update settings from previous merge of two projects" />
+    <MESSAGE value="feat(screens): WelcomeScreen" />
+    <MESSAGE value="refactor(screens): WelcomeScreen add image|privacy policy message" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(screens): WelcomeScreen add image|privacy policy message" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
