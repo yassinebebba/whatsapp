@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9ea5088-172f-4e59-a192-fa0809cb19bd" name="Changes" comment="refactor(screens): WelcomeScreen add image|privacy policy message">
-      <change afterPath="$PROJECT_DIR$/flutter/lib/presentation/pages/phone_verification_page.dart" afterDir="false" />
+    <list default="true" id="f9ea5088-172f-4e59-a192-fa0809cb19bd" name="Changes" comment="feat(pages): route RegistrationScreen -&gt; PhoneVerificationScreen">
+      <change afterPath="$PROJECT_DIR$/flutter/lib/presentation/pages/set_initial_profile_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter/lib/presentation/screens/registration_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/presentation/screens/registration_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/lib/presentation/pages/phone_verification_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/presentation/pages/phone_verification_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +35,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/country_pickers-2.0.0/lib/countries.dart" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.js" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KotlinMultiplatform">
     <allAvailableExecutables />
@@ -58,13 +59,16 @@
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JavaScript" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../orange-power-mob" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -122,7 +126,9 @@
       <workItem from="1635101687619" duration="1687000" />
       <workItem from="1635113580855" duration="2167000" />
       <workItem from="1635128347132" duration="1392000" />
-      <workItem from="1635202836432" duration="6387000" />
+      <workItem from="1635202836432" duration="7467000" />
+      <workItem from="1635283385902" duration="4000" />
+      <workItem from="1635283747649" duration="8531000" />
     </task>
     <task id="LOCAL-00001" summary="feat(cross_platform): create main app">
       <created>1633818853654</created>
@@ -299,7 +305,21 @@
       <option name="project" value="LOCAL" />
       <updated>1635207375817</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="feat(pages): PhoneVerificationPage">
+      <created>1635212720445</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1635212720445</updated>
+    </task>
+    <task id="LOCAL-00027" summary="feat(pages): route RegistrationScreen -&gt; PhoneVerificationScreen">
+      <created>1635212794313</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1635212794313</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,8 +353,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/cross_platform" />
     </ignored-roots>
-    <MESSAGE value="feat(cross_platform): create main app" />
-    <MESSAGE value="build(cross_platform): update Dart and git build files" />
     <MESSAGE value="fix(cross_platform): undetected by git" />
     <MESSAGE value="fix(cross_platform): undetected by git change folder -&gt; flutter" />
     <MESSAGE value="feat(screens): add HomeScreen" />
@@ -358,7 +376,9 @@
     <MESSAGE value="chore(IDE): update settings from previous merge of two projects" />
     <MESSAGE value="feat(screens): WelcomeScreen" />
     <MESSAGE value="refactor(screens): WelcomeScreen add image|privacy policy message" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor(screens): WelcomeScreen add image|privacy policy message" />
+    <MESSAGE value="feat(pages): PhoneVerificationPage" />
+    <MESSAGE value="feat(pages): route RegistrationScreen -&gt; PhoneVerificationScreen" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(pages): route RegistrationScreen -&gt; PhoneVerificationScreen" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

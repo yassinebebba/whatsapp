@@ -1,12 +1,10 @@
+import 'package:cross_platform/presentation/pages/set_initial_profile_page.dart';
 import 'package:cross_platform/presentation/widgets/theme/flutter_style.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PhoneVerificationPage extends StatefulWidget {
-  final String phoneNumber;
-
-  const PhoneVerificationPage({required Key key, required this.phoneNumber})
-      : super(key: key);
+  late final String phoneNumber;
 
   @override
   _PhoneVerificationPageState createState() => _PhoneVerificationPageState();
@@ -50,7 +48,14 @@ class _PhoneVerificationPageState extends State<PhoneVerificationPage> {
                 alignment: Alignment.bottomCenter,
                 child: MaterialButton(
                   color: greenColor,
-                  onPressed: () => {},
+                  onPressed: () => {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (_) => SetInitialProfileWidget(
+                                  phoneNumber: '141414',
+                                )))
+                  },
                   child: Text(
                     "Next",
                     style: TextStyle(
