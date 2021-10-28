@@ -1,3 +1,4 @@
+import 'package:cross_platform/presentation/screens/home_screen.dart';
 import 'package:cross_platform/presentation/widgets/theme/flutter_style.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -52,7 +53,13 @@ class _SetInitialProfileWidgetState extends State<SetInitialProfileWidget> {
             alignment: Alignment.bottomCenter,
             child: MaterialButton(
               color: greenColor,
-              onPressed: () => {},
+              onPressed: () => {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => const HomeScreen(),
+                    ))
+              },
               child: Text(
                 "Next",
                 style: TextStyle(
