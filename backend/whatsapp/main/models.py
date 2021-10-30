@@ -84,6 +84,9 @@ class CustomUser(AbstractBaseUser):
         return _user_has_module_perms(self, app_label)
 
     def __repr__(self):
+        return f'CustomUser(username=\'{self.username}\', phone_number=\'{self.phone_number}\')'
+
+    def __str__(self):
         return f'{self.username} - {self.phone_number}'
 
 
@@ -122,5 +125,8 @@ class Message(models.Model):
     deleted = models.BooleanField(default=False, null=False)
 
     def __repr__(self):
+        return f'Message(sender={self.sender!r}, recipient={self.recipient!r}, content=\'{self.content}\')'
+
+    def __str__(self):
         # return f'{self.sender.phone_number} - {self.recipient.phone_number}'
         return f'{self.sender.useername} ({self.sender.phone_number}) -> {self.recipient.useername} ({self.recipient.phone_number})'
