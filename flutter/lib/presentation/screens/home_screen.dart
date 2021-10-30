@@ -45,35 +45,44 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-            elevation: 0.0,
-            automaticallyImplyLeading: false,
-            backgroundColor:
-                _isSearch == true ? primaryColor : Colors.transparent,
-            title: _isSearch == false
-                ? Text("WhatsApp")
-                : Container(height: 0.0, width: 0.0),
-            flexibleSpace: _isSearch == false
-                ? Container(
-                    height: 0.0,
-                    width: 0.0,
-                  )
-                : _buildSearch(),
-            actions: <Widget>[
-              InkWell(
-                  onTap: () {
-                    setState(() {
-                      _isSearch = true;
-                    });
-                  },
-                  child: Icon(Icons.search)),
-              SizedBox(width: 5)
-            ]),
+        appBar: _currentPageIndex != 0
+            ? AppBar(
+                elevation: 0.0,
+                automaticallyImplyLeading: false,
+                backgroundColor: !_isSearch ? primaryColor : Colors.transparent,
+                title: !_isSearch
+                    ? Text("WhatsApp")
+                    : Container(height: 0.0, width: 0.0),
+                flexibleSpace: !_isSearch
+                    ? Container(
+                        height: 0.0,
+                        width: 0.0,
+                      )
+                    : null,
+                actions: <Widget>[
+                    InkWell(
+                        onTap: () {
+                          setState(() {
+                            _isSearch = true;
+                          });
+                        },
+                        child: Icon(Icons.search)),
+                    SizedBox(width: 5)
+                  ])
+            : null,
         body: Column(
           children: <Widget>[
-            TopTabBar(
-              _currentPageIndex,
-            ),
+            !_isSearch
+                ? _currentPageIndex != 0
+                    ? TopTabBar(_currentPageIndex)
+                    : Container(
+                        height: 0.0,
+                        width: 0.0,
+                      )
+                : Container(
+                    height: 0.0,
+                    width: 0.0,
+                  ),
             Expanded(
                 child: PageView.builder(
               itemCount: _pages.length,
