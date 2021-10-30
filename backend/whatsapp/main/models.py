@@ -76,7 +76,7 @@ class CustomUser(AbstractBaseUser):
     def has_perms(self, perms: List[str], obj=None) -> bool:
         if self.is_active and self.is_admin:
             return True
-        return all(self.has_perm(perm) for perm in perms)
+        return all(self.has_perm(perm, obj) for perm in perms)
 
     def has_module_perms(self, app_label: str) -> bool:
         if self.is_active and self.is_admin:
