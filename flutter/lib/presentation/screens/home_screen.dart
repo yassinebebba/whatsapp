@@ -1,4 +1,10 @@
+import 'package:cross_platform/presentation/pages/calls_page.dart';
+import 'package:cross_platform/presentation/pages/camera_page.dart';
+import 'package:cross_platform/presentation/pages/chat_page.dart';
+import 'package:cross_platform/presentation/pages/status_page.dart';
 import 'package:cross_platform/presentation/widgets/theme/flutter_style.dart';
+import 'package:cross_platform/presentation/widgets/top_tab_bar.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -10,6 +16,9 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   bool _isSearch = false;
+  int _currentPageIndex = 1;
+  PageController _pageViewController = PageController(initialPage: 1);
+  List<Widget> _pages = [CameraPage(), ChatPage(), StatusPage(), CallsPage()];
 
   _buildSearch() {
     return Container(
@@ -62,7 +71,22 @@ class _HomeScreenState extends State<HomeScreen> {
             ]),
         body: Column(
           children: <Widget>[
-            TabBar(),
+            TopTabBar(
+              _currentPageIndex,
+            ),
+            Expanded(
+                child: PageView.builder(
+              itemCount: _pages.length,
+              controller: _pageViewController,
+              onPageChanged: (index) {
+                setState(() {
+                  _currentPageIndex = index;
+                });
+              },
+              itemBuilder: (_, index) {
+                return _pages[index];
+              },
+            ))
           ],
         ));
   }

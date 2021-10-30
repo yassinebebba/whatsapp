@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9ea5088-172f-4e59-a192-fa0809cb19bd" name="Changes" comment="feat(pages): route RegistrationScreen -&gt; PhoneVerificationScreen">
-      <change afterPath="$PROJECT_DIR$/flutter/lib/presentation/pages/set_initial_profile_page.dart" afterDir="false" />
+    <list default="true" id="f9ea5088-172f-4e59-a192-fa0809cb19bd" name="Changes" comment="feat(pages): calls/camera/chat/status">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter/lib/presentation/pages/phone_verification_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/presentation/pages/phone_verification_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/lib/presentation/screens/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/presentation/screens/home_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/lib/presentation/widgets/top_tab_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/presentation/widgets/top_tab_bar.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +35,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/country_pickers-2.0.0/lib/countries.dart" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.js" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KotlinMultiplatform">
     <allAvailableExecutables />
@@ -59,7 +58,7 @@
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JavaScript" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/flutter/lib/presentation/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -74,6 +73,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter\lib\presentation\pages" />
       <recent name="C:\Users\JEITI\IdeaProjects\whatsapp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -128,7 +128,10 @@
       <workItem from="1635128347132" duration="1392000" />
       <workItem from="1635202836432" duration="7467000" />
       <workItem from="1635283385902" duration="4000" />
-      <workItem from="1635283747649" duration="8531000" />
+      <workItem from="1635283747649" duration="10651000" />
+      <workItem from="1635377563433" duration="6202000" />
+      <workItem from="1635466762201" duration="5998000" />
+      <workItem from="1635547378472" duration="9788000" />
     </task>
     <task id="LOCAL-00001" summary="feat(cross_platform): create main app">
       <created>1633818853654</created>
@@ -319,7 +322,56 @@
       <option name="project" value="LOCAL" />
       <updated>1635212794313</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="feat(pages): initial profile page">
+      <created>1635298225428</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1635298225428</updated>
+    </task>
+    <task id="LOCAL-00029" summary="feat(pages): route PhoneVerificationPage -&gt; SetInitialProfileWidget">
+      <created>1635298363557</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1635298363557</updated>
+    </task>
+    <task id="LOCAL-00030" summary="refactor(main): add primary color">
+      <created>1635382774286</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1635382774286</updated>
+    </task>
+    <task id="LOCAL-00031" summary="refactor(pages): route InitialProfilePage -&gt; HomeScreen">
+      <created>1635382900892</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1635382900892</updated>
+    </task>
+    <task id="LOCAL-00032" summary="feat(screens): search bar">
+      <created>1635470987870</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1635470987870</updated>
+    </task>
+    <task id="LOCAL-00033" summary="feat(widgets): TopTabBar">
+      <created>1635471025956</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1635471025956</updated>
+    </task>
+    <task id="LOCAL-00034" summary="feat(pages): calls/camera/chat/status">
+      <created>1635560653529</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1635560653529</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,13 +405,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/cross_platform" />
     </ignored-roots>
-    <MESSAGE value="fix(cross_platform): undetected by git" />
-    <MESSAGE value="fix(cross_platform): undetected by git change folder -&gt; flutter" />
-    <MESSAGE value="feat(screens): add HomeScreen" />
-    <MESSAGE value="fix(screens): fix route" />
-    <MESSAGE value="fix(screens): route -&gt; HomeScreen" />
-    <MESSAGE value="feat(theme): add flutter_style" />
-    <MESSAGE value="feat(screens): add RegistrationScreen" />
     <MESSAGE value="feat(main): add RegistrationScreen route to test api" />
     <MESSAGE value="fix(main): route global key error &quot;_&quot; -&gt; &quot;/&quot;" />
     <MESSAGE value="feat(screens): input field phone verification" />
@@ -378,7 +423,14 @@
     <MESSAGE value="refactor(screens): WelcomeScreen add image|privacy policy message" />
     <MESSAGE value="feat(pages): PhoneVerificationPage" />
     <MESSAGE value="feat(pages): route RegistrationScreen -&gt; PhoneVerificationScreen" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(pages): route RegistrationScreen -&gt; PhoneVerificationScreen" />
+    <MESSAGE value="feat(pages): initial profile page" />
+    <MESSAGE value="feat(pages): route PhoneVerificationPage -&gt; SetInitialProfileWidget" />
+    <MESSAGE value="refactor(main): add primary color" />
+    <MESSAGE value="refactor(pages): route InitialProfilePage -&gt; HomeScreen" />
+    <MESSAGE value="feat(screens): search bar" />
+    <MESSAGE value="feat(widgets): TopTabBar" />
+    <MESSAGE value="feat(pages): calls/camera/chat/status" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(pages): calls/camera/chat/status" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
