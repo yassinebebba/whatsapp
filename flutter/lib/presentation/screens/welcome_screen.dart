@@ -9,7 +9,7 @@ class WelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        margin: EdgeInsets.symmetric(
+        margin: const EdgeInsets.symmetric(
           horizontal: 20,
           vertical: 30,
         ),
@@ -17,7 +17,7 @@ class WelcomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            Text(
+            const Text(
               "Welcome to WhatsApp",
               style: TextStyle(
                 fontSize: 20,
@@ -25,19 +25,19 @@ class WelcomeScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Container(
+            SizedBox(
               height: 290,
               width: 290,
               child: Image.asset("assets/phone-background.png"),
             ),
             Column(
               children: <Widget>[
-                Text(
+                const Text(
                   "Read our Privacy Policy, 'Agree and continue' to accept the Terms of Service",
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 14),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 MaterialButton(
@@ -46,11 +46,11 @@ class WelcomeScreen extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (_) => RegistrationScreen(),
+                        builder: (_) => const RegistrationScreen(),
                       ),
                     );
                   },
-                  child: Text(
+                  child: const Text(
                     "AGREE AND CONTINUE",
                     style: TextStyle(
                       fontSize: 18,
