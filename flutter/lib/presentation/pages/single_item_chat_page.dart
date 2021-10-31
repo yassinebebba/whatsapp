@@ -49,4 +49,35 @@ class SingleItemChatPage extends StatelessWidget {
     names.shuffle();
     return names.removeLast();
   }
+
+  static String getRandomMessage() {
+    List<String> messages = [
+      "I saw you in the street. You like ignoring people.",
+      "Why, you never respond?",
+      "What did you get?",
+      "I lost my dog. He wasn't home.",
+      "Sarada is named after Salad",
+      "good evening",
+      "I chose psychology over CS.",
+      "I didn't go either",
+      "Only time will tell.",
+      "He was there but she hid.",
+      "Blizzard fanboy?",
+      "She said you did.",
+      "Abdallah called me about Fola.",
+      "Xi said you would come.",
+      "Toms had 98% average."
+    ];
+    messages.shuffle();
+    return messages.removeLast();
+  }
+
+  static Object getRandomTime() {
+    var random = Random();
+    int hour = random.nextInt(24);
+    int minute = random.nextInt(60);
+    var result = hour < 10 ? "0$hour" : hour;
+    result = minute < 10 ? "$result:$minute\0" : "$result:$minute";
+    return result;
+  }
 }
