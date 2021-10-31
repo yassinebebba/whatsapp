@@ -10,9 +10,10 @@ class SingleItemChatPage extends StatelessWidget {
           Container(
               height: 55,
               width: 55,
+              // rounded Rectangle
               child: ClipRRect(
                   borderRadius: BorderRadius.all(Radius.circular(25)),
-                  child: Image.asset("assets/profile-default.png ")))
+                  child: Image.asset("assets/profile-default.png")))
         ])
       ],
     ));
