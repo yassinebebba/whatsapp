@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9ea5088-172f-4e59-a192-fa0809cb19bd" name="Changes" comment="feat(pages): calls/camera/chat/status">
+    <list default="true" id="f9ea5088-172f-4e59-a192-fa0809cb19bd" name="Changes" comment="feat(pages): display random message/time (test)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter/lib/presentation/screens/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/presentation/screens/home_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter/lib/presentation/widgets/top_tab_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/presentation/widgets/top_tab_bar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/lib/presentation/pages/single_item_chat_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/presentation/pages/single_item_chat_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +57,8 @@
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JavaScript" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="16.9.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.9.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/flutter/lib/presentation/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -67,7 +68,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -77,11 +78,11 @@
       <recent name="C:\Users\JEITI\IdeaProjects\whatsapp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter\assets" />
       <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter" />
       <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter\lib" />
       <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\assets" />
       <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter\lib\presentation\screens" />
-      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter\lib\presentation\widgets" />
     </key>
   </component>
   <component name="RunManager" selected="Flutter.main.dart">
@@ -92,9 +93,13 @@
     <configuration name="scratch_1.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="scratch.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Flutter.main.dart" />
+        <item itemvalue="Node.js.scratch.js" />
         <item itemvalue="Node.js.scratch_1.js" />
       </list>
     </recent_temporary>
@@ -132,6 +137,11 @@
       <workItem from="1635377563433" duration="6202000" />
       <workItem from="1635466762201" duration="5998000" />
       <workItem from="1635547378472" duration="9788000" />
+      <workItem from="1635598846857" duration="803000" />
+      <workItem from="1635599740563" duration="401000" />
+      <workItem from="1635600163246" duration="7347000" />
+      <workItem from="1635609749635" duration="6696000" />
+      <workItem from="1635634809039" duration="12776000" />
     </task>
     <task id="LOCAL-00001" summary="feat(cross_platform): create main app">
       <created>1633818853654</created>
@@ -371,7 +381,56 @@
       <option name="project" value="LOCAL" />
       <updated>1635560653529</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="feat(pages): SingleItemChatPage">
+      <created>1635636922073</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1635636922074</updated>
+    </task>
+    <task id="LOCAL-00036" summary="feat(pages): display user chats">
+      <created>1635637095067</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1635637095067</updated>
+    </task>
+    <task id="LOCAL-00037" summary="fix(screens): displaying of TopTabBar">
+      <created>1635637163883</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1635637163883</updated>
+    </task>
+    <task id="LOCAL-00038" summary="refactor(screens): add const|replace Container -&gt; SizedBox">
+      <created>1635637222798</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1635637222798</updated>
+    </task>
+    <task id="LOCAL-00039" summary="fix(assets): display user/agreement images">
+      <created>1635638848277</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1635638848277</updated>
+    </task>
+    <task id="LOCAL-00040" summary="feat(pages): display usernames (test)">
+      <created>1635640251713</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1635640251713</updated>
+    </task>
+    <task id="LOCAL-00041" summary="feat(pages): display random message/time (test)">
+      <created>1635695362498</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1635695362498</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,13 +464,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/cross_platform" />
     </ignored-roots>
-    <MESSAGE value="feat(main): add RegistrationScreen route to test api" />
-    <MESSAGE value="fix(main): route global key error &quot;_&quot; -&gt; &quot;/&quot;" />
-    <MESSAGE value="feat(screens): input field phone verification" />
-    <MESSAGE value="feat(screens): next button phone verification" />
-    <MESSAGE value="refactor(screens): create user api call" />
-    <MESSAGE value="refactor(screens): place individual screens -&gt; screens dir" />
-    <MESSAGE value="build(pubspec): add country_pickers" />
     <MESSAGE value="build(pubspec): add fluttertoast" />
     <MESSAGE value="fix(screens) RegistrationScreen extends StatefulWidget" />
     <MESSAGE value="build(pubspec): add http package" />
@@ -430,7 +482,18 @@
     <MESSAGE value="feat(screens): search bar" />
     <MESSAGE value="feat(widgets): TopTabBar" />
     <MESSAGE value="feat(pages): calls/camera/chat/status" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(pages): calls/camera/chat/status" />
+    <MESSAGE value="feat(pages): SingleItemChatPage" />
+    <MESSAGE value="feat(pages): display user chats" />
+    <MESSAGE value="fix(screens): displaying of TopTabBar" />
+    <MESSAGE value="refactor(screens): add const|replace Container -&gt; SizedBox" />
+    <MESSAGE value="fix(assets): display user/agreement images" />
+    <MESSAGE value="feat(pages): display usernames (test)" />
+    <MESSAGE value="feat(pages): display random message/time (test)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(pages): display random message/time (test)" />
+  </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history />
+    <find-history />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
