@@ -1,4 +1,4 @@
- 'package:cross_platform/presentation/widgets/theme/flutter_style.dart';
+import 'package:cross_platform/presentation/widgets/theme/flutter_style.dart';
 import 'package:flutter/material.dart';
 
 class StatusPage extends StatelessWidget {
@@ -7,7 +7,13 @@ class StatusPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Scaffold(body: Stack(children: <Widget>[_customActionButton()])));
+        body: Scaffold(body: Stack(children: <Widget>[_customActionButton(),
+          Column(
+            children: <Widget>[
+              _storyWidget(),
+            ],
+          )
+        ])));
   }
 }
 
@@ -45,4 +51,32 @@ Widget _customActionButton() {
           child: Icon(Icons.camera_alt, color: Colors.white),
         )
       ]));
+}
+
+Widget _storyWidget() {
+  return Container(
+    child: Container(
+      child: Row(
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(2.0),
+            child: Image.asset("assets/profile-default.png"),
+          ),
+          Positioned(
+              right: 0,
+              bottom: 0,
+              child: Container(
+                width: 20,
+                height: 20,
+                decoration: BoxDecoration(
+                    color: primaryColor,
+                    borderRadius: BorderRadius.all(Radius.circular(20),)
+                ),
+                child: Icon(Icons.add, color: Colors.white,),
+              )
+          )
+        ],
+      ),
+    ),
+  )
 }
