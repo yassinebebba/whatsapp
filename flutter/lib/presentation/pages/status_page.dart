@@ -57,46 +57,54 @@ Widget _storyWidget() {
   return Container(
       child: Container(
           child: Row(children: <Widget>[
-    Padding(
-      padding: const EdgeInsets.all(2.0),
-      child: Image.asset(
-        "assets/profile-default.png",
-        width: 30,
-        height: 30,
-      ),
-    ),
-    Positioned(
-        right: 0,
-        bottom: 0,
-        child: Container(
-          width: 20,
-          height: 20,
-          decoration: BoxDecoration(
-              color: primaryColor,
-              borderRadius: BorderRadius.all(
-                Radius.circular(20),
-              )),
-          child: Icon(
-            Icons.add,
-            color: Colors.white,
-            size: 15,
+        Padding(
+          padding: const EdgeInsets.all(2.0),
+          child: Image.asset(
+            "assets/profile-default.png",
+            width: 30,
+            height: 30,
           ),
-        )),
-    SizedBox(
-      width: 12,
-    ),
-    Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Text(
-          "My status",
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
         ),
+        Positioned(
+            right: 0,
+            bottom: 0,
+            child: Container(
+              width: 20,
+              height: 20,
+              decoration: BoxDecoration(
+                  color: primaryColor,
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(20),
+                  )),
+              child: Icon(
+                Icons.add,
+                color: Colors.white,
+                size: 15,
+              ),
+            )),
         SizedBox(
-          height: 2,
+          width: 12,
         ),
-        Text("Tap to add status update"),
-      ],
-    ),
-  )
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              "My status",
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+            ),
+            SizedBox(
+              height: 2,
+            ),
+            Text("Tap to add status update"),
+          ],
+        ),
+      ])));
+}
+
+Widget _recentTextWidget() {
+  return Container(
+      width: double.infinity,
+      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+      decoration: BoxDecoration(color: Colors.grey[200]),
+      child: Text("Recent updates"));
 }
