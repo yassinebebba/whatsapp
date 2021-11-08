@@ -34,7 +34,7 @@ class SingleItemStoryPage extends StatelessWidget {
                         ),
                         SizedBox(height: 5),
                         Text(
-                          SingleItemChatPage.getRandomMessage(),
+                          SingleItemChatPage.getRandomTime().toString(),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                         )
@@ -49,7 +49,6 @@ class SingleItemStoryPage extends StatelessWidget {
                 thickness: 1.50,
               ),
             ),
-            Text(SingleItemChatPage.getRandomTime().toString())
           ],
         ));
   }
