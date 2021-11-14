@@ -69,7 +69,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             ),
             SizedBox(width: 30),
             const Text(
-              "WhatsApp Clone will send and SMS message (carrier charges may apply) to verify your phone number. Enter your country code and phone number:",
+              "WhatsApp will send an SMS message (carrier charges may apply) to"
+              " verify your phone number. Enter your country code and phone number:",
               style: TextStyle(
                 fontSize: 16,
               ),
