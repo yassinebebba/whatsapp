@@ -1,3 +1,4 @@
+import 'package:cross_platform/presentation/widgets/theme/flutter_style.dart';
 import 'package:flutter/material.dart';
 
 class CallsPage extends StatelessWidget {
@@ -5,6 +6,19 @@ class CallsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Center(child: Text("Calls Page")));
+    return Scaffold(
+      // body: ListView.builder(itemBuilder: itemCount: 10, itemBuilder:
+      //     (BuildContext context, int index) {
+      //   return SingleItemCallPage();
+      // }),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: primaryColor,
+        child: Icon(
+          Icons.add_call,
+          color: Colors.white,
+        ),
+      ),
+    );
   }
 }
