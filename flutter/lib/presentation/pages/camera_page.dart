@@ -33,9 +33,9 @@ class _CameraPageState extends State<CameraPage> {
   }
 
   Future<void> getImages() async {
-    await imagePicker.getAllImages.then((v) {
+    await imagePicker.getAllImages(callback: (retrievedImages) {
       setState(() {
-        _gallery = v;
+        _gallery = retrievedImages;
       });
     });
   }
