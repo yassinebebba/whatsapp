@@ -74,4 +74,10 @@ class _PhoneVerificationPageState extends State<PhoneVerificationPage> {
       ),
     );
   }
+
+  void _submitSmsCode() {
+    if (_pinCodeController.text.isNotEmpty) {
+      // return _pinCodeController.text;
+    }
+  }
 }
