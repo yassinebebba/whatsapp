@@ -4,7 +4,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PhoneVerificationPage extends StatefulWidget {
-  late final String phoneNumber;
+  late String phoneNumber;
+
+  PhoneVerificationPage({Key? key, required String phoneNumber})
+      : super(key: key);
 
   @override
   _PhoneVerificationPageState createState() => _PhoneVerificationPageState();
