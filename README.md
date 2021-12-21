@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="assets/whatsapp-demo.png" alt="Logo" width="80" height="80">
+    <img src="flutter/assets/whatsapp-demo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">WhatsApp</h3>
@@ -84,7 +84,7 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+<!-- This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples. -->
 
 * [Flutter](https://flutter.dev/)
 * [country_pickers](https://https://pub.dev/packages/country_pickers/)
@@ -94,9 +94,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This project requires Flutter installed. For further information about the installation please follow this link: https://docs.flutter.dev/get-started/install/windows
 
 ### Prerequisites
 
@@ -175,7 +173,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/i_zanis)
+Your Name - [@i-zanis](https://twitter.com/i_zanis)
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/yassinebebba/whatsapp)
 
