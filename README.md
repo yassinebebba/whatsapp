@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="flutter/assets/whatsapp-demo.png" alt="Logo" width="80" height="80">
+    <img src="flutter/assets/whatsapp-demo.png" alt="Logo">
   </a>
 
   <h3 align="center">WhatsApp</h3>
@@ -94,11 +94,11 @@ Use the `BLANK_README.md` to get started.
 
 <!-- GETTING STARTED -->
 ## Getting Started
-This project requires Flutter installed. For further information about the installation please follow this link: https://docs.flutter.dev/get-started/install/windows
+This project requires Flutter installed. For further information about the installation please follow this link: https://docs.flutter.dev/get-started/install
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+[//]: # (This is an example of how to list things you need to use the software and how to install them.)
 * Flutter
   ```sh
   flutter pub get
@@ -175,13 +175,13 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@i-zanis](https://twitter.com/i_zanis)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/yassinebebba/whatsapp)
+Project Link: [https://github.com/yassinebebba/whatsapp](`https://github.com/yassinebebba/whatsapp`)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- 
-<!-- ACKNOWLEDGMENTS -->
+
 <!-- ## Acknowledgments
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
@@ -195,7 +195,8 @@ Use this space to list resources you find helpful and would like to give credit 
 * [Font Awesome](https://fontawesome.com)
 * [React Icons](https://react-icons.github.io/react-icons/search)
  -->
-<!-- <p align="right">(<a href="#top">back to top</a>)</p> --> -->
+
+[//]: # (<!-- <p align="right">&#40;<a href="#top">back to top</a>&#41;</p> --> -->)
 
 
 
@@ -213,4 +214,5 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png --> -->
+
+[//]: # ([product-screenshot]: images/screenshot.png)
