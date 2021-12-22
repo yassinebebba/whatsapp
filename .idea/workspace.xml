@@ -4,9 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9ea5088-172f-4e59-a192-fa0809cb19bd" name="Changes" comment="feat(pages): display random message/time (test)">
+    <list default="true" id="f9ea5088-172f-4e59-a192-fa0809cb19bd" name="Changes" comment="feat(pages): newGroupButton, newContactButton on ContactPage">
+      <change afterPath="$PROJECT_DIR$/flutter/lib/domain/entities/my_chat.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter/lib/domain/entities/text_message.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter/lib/domain/usecases/get_create_current_user.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter/lib/domain/usecases/get_current_uid.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter/lib/domain/usecases/is_logged.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter/lib/domain/usecases/log_out.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter/lib/domain/usecases/log_with_phone_number.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter/lib/domain/usecases/verify_phone_number.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter/lib/presentation/pages/single_communication_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/lib/data/datasource/local_datasource.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/data/datasource/local_datasource.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/lib/data/repositories/firebase_repository_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/data/repositories/firebase_repository_impl.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/lib/domain/entities/contact.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/domain/entities/contact.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/lib/domain/entities/user_entity.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/domain/entities/user.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/lib/domain/repository/firebase_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/domain/repository/firebase_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/lib/presentation/pages/camera_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/presentation/pages/camera_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/lib/presentation/pages/chat_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/presentation/pages/chat_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/lib/presentation/pages/phone_verification_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/presentation/pages/phone_verification_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/lib/presentation/pages/select_contact_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/presentation/pages/select_contact_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/lib/presentation/pages/set_initial_profile_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/presentation/pages/set_initial_profile_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/lib/presentation/pages/single_item_call_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/presentation/pages/single_item_call_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flutter/lib/presentation/pages/single_item_chat_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/lib/presentation/pages/single_item_chat_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,12 +42,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Dart File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -32,14 +57,28 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="4" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/country_pickers-2.0.0/lib/countries.dart" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/flutter/lib/presentation/pages/set_initial_profile_page.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/flutter/lib/presentation/pages/phone_verification_page.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/flutter/lib/presentation/pages/camera_page.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/flutter/lib/presentation/pages/calls_page.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/flutter/lib/presentation/widgets/top_tab_bar.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/flutter/lib/presentation/widgets/theme/flutter_style.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/flutter/packages/flutter/lib/src/widgets/scroll_physics.dart" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.js" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KotlinMultiplatform">
     <allAvailableExecutables />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="aobthdr7" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1zHir0GmPHIbJiDFJng3qKbdXmf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -54,12 +93,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JavaScript" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="TEXT&#10;JAVA&#10;JavaScript" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="16.9.1" />
     <property name="javascript.nodejs.core.library.typings.version" value="16.9.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/flutter/lib/presentation/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../youtube-vue" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -78,11 +117,11 @@
       <recent name="C:\Users\JEITI\IdeaProjects\whatsapp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter\lib\domain\entities" />
       <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter\assets" />
-      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter" />
-      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter\lib" />
-      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\assets" />
-      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter\lib\presentation\screens" />
+      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp" />
+      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter\lib\data\repositories" />
+      <recent name="C:\Users\JEITI\IdeaProjects\whatsapp\flutter\lib\data" />
     </key>
   </component>
   <component name="RunManager" selected="Flutter.main.dart">
@@ -141,210 +180,39 @@
       <workItem from="1635599740563" duration="401000" />
       <workItem from="1635600163246" duration="7347000" />
       <workItem from="1635609749635" duration="6696000" />
-      <workItem from="1635634809039" duration="12776000" />
-    </task>
-    <task id="LOCAL-00001" summary="feat(cross_platform): create main app">
-      <created>1633818853654</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1633818853654</updated>
-    </task>
-    <task id="LOCAL-00002" summary="build(cross_platform): update Dart and git build files">
-      <created>1634181217994</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1634181217994</updated>
-    </task>
-    <task id="LOCAL-00003" summary="fix(cross_platform): undetected by git">
-      <created>1634252278540</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1634252278540</updated>
-    </task>
-    <task id="LOCAL-00004" summary="fix(cross_platform): undetected by git change folder -&gt; flutter">
-      <created>1634252555329</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1634252555329</updated>
-    </task>
-    <task id="LOCAL-00005" summary="feat(screens): add HomeScreen">
-      <created>1634256692124</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1634256692124</updated>
-    </task>
-    <task id="LOCAL-00006" summary="fix(screens): fix route">
-      <created>1634256869970</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1634256869970</updated>
-    </task>
-    <task id="LOCAL-00007" summary="fix(screens): route -&gt; HomeScreen">
-      <created>1634257049047</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1634257049047</updated>
-    </task>
-    <task id="LOCAL-00008" summary="feat(theme): add flutter_style">
-      <created>1634339274769</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1634339274769</updated>
-    </task>
-    <task id="LOCAL-00009" summary="feat(screens): add RegistrationScreen">
-      <created>1634339969310</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1634339969310</updated>
-    </task>
-    <task id="LOCAL-00010" summary="feat(main): add RegistrationScreen route to test api">
-      <created>1634342782922</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1634342782922</updated>
-    </task>
-    <task id="LOCAL-00011" summary="fix(main): route global key error &quot;_&quot; -&gt; &quot;/&quot;">
-      <created>1634343822326</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1634343822326</updated>
-    </task>
-    <task id="LOCAL-00012" summary="feat(screens): input field phone verification">
-      <created>1634345661982</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1634345661982</updated>
-    </task>
-    <task id="LOCAL-00013" summary="feat(screens): next button phone verification">
-      <created>1634345914621</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1634345914621</updated>
-    </task>
-    <task id="LOCAL-00014" summary="refactor(screens): create user api call">
-      <created>1634348457356</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1634348457356</updated>
-    </task>
-    <task id="LOCAL-00015" summary="refactor(screens): place individual screens -&gt; screens dir">
-      <created>1634348854262</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1634348854262</updated>
-    </task>
-    <task id="LOCAL-00016" summary="build(pubspec): add country_pickers">
-      <created>1634402392322</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1634402392322</updated>
-    </task>
-    <task id="LOCAL-00017" summary="build(pubspec): add fluttertoast">
-      <created>1634405272579</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1634405272579</updated>
-    </task>
-    <task id="LOCAL-00018" summary="fix(screens) RegistrationScreen extends StatefulWidget">
-      <created>1634405354742</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1634405354742</updated>
-    </task>
-    <task id="LOCAL-00019" summary="build(pubspec): add http package">
-      <created>1634409633112</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1634409633112</updated>
-    </task>
-    <task id="LOCAL-00020" summary="feat(registration): add countrypicker utils, country code dropdown list">
-      <created>1634409993948</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1634409993948</updated>
-    </task>
-    <task id="LOCAL-00021" summary="feat(registration): add openCountryList(), buildDialogItem widget">
-      <created>1634410269581</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1634410269581</updated>
-    </task>
-    <task id="LOCAL-00022" summary="feat(django): activate()">
-      <created>1634446522320</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1634446522320</updated>
-    </task>
-    <task id="LOCAL-00023" summary="chore(IDE): update settings from previous merge of two projects">
-      <created>1635026493600</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1635026493600</updated>
-    </task>
-    <task id="LOCAL-00024" summary="feat(screens): WelcomeScreen">
-      <created>1635116186715</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1635116186715</updated>
-    </task>
-    <task id="LOCAL-00025" summary="refactor(screens): WelcomeScreen add image|privacy policy message">
-      <created>1635207375817</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1635207375817</updated>
-    </task>
-    <task id="LOCAL-00026" summary="feat(pages): PhoneVerificationPage">
-      <created>1635212720445</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1635212720445</updated>
-    </task>
-    <task id="LOCAL-00027" summary="feat(pages): route RegistrationScreen -&gt; PhoneVerificationScreen">
-      <created>1635212794313</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1635212794313</updated>
-    </task>
-    <task id="LOCAL-00028" summary="feat(pages): initial profile page">
-      <created>1635298225428</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1635298225428</updated>
-    </task>
-    <task id="LOCAL-00029" summary="feat(pages): route PhoneVerificationPage -&gt; SetInitialProfileWidget">
-      <created>1635298363557</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1635298363557</updated>
+      <workItem from="1635634809039" duration="17298000" />
+      <workItem from="1635871259710" duration="1497000" />
+      <workItem from="1635983509899" duration="3492000" />
+      <workItem from="1636240408513" duration="13847000" />
+      <workItem from="1636330232352" duration="6192000" />
+      <workItem from="1636396904464" duration="10000" />
+      <workItem from="1636397010012" duration="87000" />
+      <workItem from="1636397138595" duration="605000" />
+      <workItem from="1636845662382" duration="5640000" />
+      <workItem from="1636934207525" duration="210000" />
+      <workItem from="1636999178431" duration="3756000" />
+      <workItem from="1637021351731" duration="56000" />
+      <workItem from="1637152799139" duration="3467000" />
+      <workItem from="1637282310489" duration="64000" />
+      <workItem from="1637524784296" duration="191000" />
+      <workItem from="1637528863439" duration="597000" />
+      <workItem from="1637574172283" duration="617000" />
+      <workItem from="1637758160287" duration="618000" />
+      <workItem from="1638390420518" duration="639000" />
+      <workItem from="1638447707289" duration="646000" />
+      <workItem from="1638633140188" duration="633000" />
+      <workItem from="1638635117330" duration="2018000" />
+      <workItem from="1638639855644" duration="251000" />
+      <workItem from="1638913372252" duration="167000" />
+      <workItem from="1639613593587" duration="2473000" />
+      <workItem from="1639681515281" duration="5255000" />
+      <workItem from="1639701670231" duration="479000" />
+      <workItem from="1639850454504" duration="7268000" />
+      <workItem from="1639860165914" duration="16000" />
+      <workItem from="1639931487452" duration="106000" />
+      <workItem from="1639955008799" duration="6181000" />
+      <workItem from="1640014728135" duration="31498000" />
+      <workItem from="1640115758262" duration="7599000" />
     </task>
     <task id="LOCAL-00030" summary="refactor(main): add primary color">
       <created>1635382774286</created>
@@ -430,11 +298,280 @@
       <option name="project" value="LOCAL" />
       <updated>1635695362498</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="feat(pages): full display user icon|message|date">
+      <created>1635695555117</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1635695555117</updated>
+    </task>
+    <task id="LOCAL-00043" summary="feat(widgets): customActionButton for StatusPage">
+      <created>1636013739913</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1636013739913</updated>
+    </task>
+    <task id="LOCAL-00044" summary="feat(pages): _storyWidget">
+      <created>1636242969693</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1636242969693</updated>
+    </task>
+    <task id="LOCAL-00045" summary="feat(pages): My Status|reduce icon size">
+      <created>1636326493134</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1636326493134</updated>
+    </task>
+    <task id="LOCAL-00046" summary="feat(pages): recentTextWidget">
+      <created>1636326947901</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1636326947901</updated>
+    </task>
+    <task id="LOCAL-00047" summary="feat(pages): SingleItemStoryPage">
+      <created>1636329866595</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1636329866595</updated>
+    </task>
+    <task id="LOCAL-00048" summary="refactor(pages): remove user message|change location of time">
+      <created>1636330082412</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1636330082412</updated>
+    </task>
+    <task id="LOCAL-00049" summary="feat(pages): SingleItemCallPage">
+      <created>1636847871440</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1636847871440</updated>
+    </task>
+    <task id="LOCAL-00050" summary="refactor(screens): correct displayed text">
+      <created>1636934253626</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1636934253626</updated>
+    </task>
+    <task id="LOCAL-00051" summary="feat(pages): widget _listStories()">
+      <created>1637524970973</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1637524970973</updated>
+    </task>
+    <task id="LOCAL-00052" summary="refactor(calls_page">
+      <created>1638913413754</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1638913413754</updated>
+    </task>
+    <task id="LOCAL-00053" summary="refactor(pages): add floating action button">
+      <created>1638913438483</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1638913438483</updated>
+    </task>
+    <task id="LOCAL-00054" summary="fix(pages): ListView wrong parameters">
+      <created>1639616045445</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1639616045445</updated>
+    </task>
+    <task id="LOCAL-00055" summary="refactor(pages): add initializeCam(), getImages()">
+      <created>1639686869060</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1639686869061</updated>
+    </task>
+    <task id="LOCAL-00056" summary="fix(pages): callback value on getAllImages">
+      <created>1639850841428</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1639850841428</updated>
+    </task>
+    <task id="LOCAL-00057" summary="fix(pages): camera operational">
+      <created>1639855596904</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1639855596904</updated>
+    </task>
+    <task id="LOCAL-00058" summary="fix(pages): dependency/flutter v2.5 switch -&gt; camera operational">
+      <created>1639855685204</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1639855685204</updated>
+    </task>
+    <task id="LOCAL-00059" summary="build(pubspec): add camera/image_picker">
+      <created>1639931558773</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1639931558773</updated>
+    </task>
+    <task id="LOCAL-00060" summary="build(gradle): minSdkVersion 21, compileSdk 31">
+      <created>1640016956919</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1640016956919</updated>
+    </task>
+    <task id="LOCAL-00061" summary="feat(domain): class User">
+      <created>1640017015261</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1640017015261</updated>
+    </task>
+    <task id="LOCAL-00062" summary="feat(firebase): Firebase Repository">
+      <created>1640019009741</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1640019009741</updated>
+    </task>
+    <task id="LOCAL-00063" summary="feat(firebase): FirebaseRepositoryImpl">
+      <created>1640019053863</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1640019053863</updated>
+    </task>
+    <task id="LOCAL-00064" summary="refactor(pages): add constructor to PhoneVerificationPage">
+      <created>1640035223679</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1640035223679</updated>
+    </task>
+    <task id="LOCAL-00065" summary="refactor(screens): add new states to RegistrationScreen">
+      <created>1640038877890</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1640038877890</updated>
+    </task>
+    <task id="LOCAL-00066" summary="refactor(pages): add semi-transparent icon on ChatPage">
+      <created>1640040404617</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1640040404617</updated>
+    </task>
+    <task id="LOCAL-00067" summary="refactor(pages): add semi-transparent icon on ChatPage">
+      <created>1640040444426</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1640040444426</updated>
+    </task>
+    <task id="LOCAL-00068" summary="docs(readme): add MIT license">
+      <created>1640082520934</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1640082520934</updated>
+    </task>
+    <task id="LOCAL-00069" summary="docs(readme): add demo image">
+      <created>1640082544461</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1640082544461</updated>
+    </task>
+    <task id="LOCAL-00070" summary="docs(readme): adjust image size|remove clutter">
+      <created>1640084165797</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1640084165797</updated>
+    </task>
+    <task id="LOCAL-00071" summary="docs(readme): update demo image">
+      <created>1640084780267</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1640084780267</updated>
+    </task>
+    <task id="LOCAL-00072" summary="docs(readme): update demo image">
+      <created>1640084856934</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1640084856934</updated>
+    </task>
+    <task id="LOCAL-00073" summary="build(pubspec): add contacts_service">
+      <created>1640100132103</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1640100132103</updated>
+    </task>
+    <task id="LOCAL-00074" summary="feat(domain): ContactEntity">
+      <created>1640100210664</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1640100210664</updated>
+    </task>
+    <task id="LOCAL-00075" summary="refactor(data): add local datasource">
+      <created>1640100530961</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1640100530961</updated>
+    </task>
+    <task id="LOCAL-00076" summary="feat(pages): SelectContactPage">
+      <created>1640114340419</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1640114340419</updated>
+    </task>
+    <task id="LOCAL-00077" summary="refactor(pages): fix ChatPage alignment|route">
+      <created>1640119701265</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1640119701266</updated>
+    </task>
+    <task id="LOCAL-00078" summary="feat(pages): newGroupButton, newContactButton on ContactPage">
+      <created>1640129430641</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1640129430641</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -458,38 +595,37 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/cross_platform" />
     </ignored-roots>
-    <MESSAGE value="build(pubspec): add fluttertoast" />
-    <MESSAGE value="fix(screens) RegistrationScreen extends StatefulWidget" />
-    <MESSAGE value="build(pubspec): add http package" />
-    <MESSAGE value="feat(registration): add countrypicker utils, country code dropdown list" />
-    <MESSAGE value="feat(registration): add openCountryList(), buildDialogItem widget" />
-    <MESSAGE value="feat(django): activate()" />
-    <MESSAGE value="chore(IDE): update settings from previous merge of two projects" />
-    <MESSAGE value="feat(screens): WelcomeScreen" />
-    <MESSAGE value="refactor(screens): WelcomeScreen add image|privacy policy message" />
-    <MESSAGE value="feat(pages): PhoneVerificationPage" />
-    <MESSAGE value="feat(pages): route RegistrationScreen -&gt; PhoneVerificationScreen" />
-    <MESSAGE value="feat(pages): initial profile page" />
-    <MESSAGE value="feat(pages): route PhoneVerificationPage -&gt; SetInitialProfileWidget" />
-    <MESSAGE value="refactor(main): add primary color" />
-    <MESSAGE value="refactor(pages): route InitialProfilePage -&gt; HomeScreen" />
-    <MESSAGE value="feat(screens): search bar" />
-    <MESSAGE value="feat(widgets): TopTabBar" />
-    <MESSAGE value="feat(pages): calls/camera/chat/status" />
-    <MESSAGE value="feat(pages): SingleItemChatPage" />
-    <MESSAGE value="feat(pages): display user chats" />
-    <MESSAGE value="fix(screens): displaying of TopTabBar" />
-    <MESSAGE value="refactor(screens): add const|replace Container -&gt; SizedBox" />
-    <MESSAGE value="fix(assets): display user/agreement images" />
-    <MESSAGE value="feat(pages): display usernames (test)" />
-    <MESSAGE value="feat(pages): display random message/time (test)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(pages): display random message/time (test)" />
+    <MESSAGE value="refactor(calls_page" />
+    <MESSAGE value="refactor(pages): add floating action button" />
+    <MESSAGE value="fix(pages): ListView wrong parameters" />
+    <MESSAGE value="refactor(pages): add initializeCam(), getImages()" />
+    <MESSAGE value="fix(pages): callback value on getAllImages" />
+    <MESSAGE value="fix(pages): camera operational" />
+    <MESSAGE value="fix(pages): dependency/flutter v2.5 switch -&gt; camera operational" />
+    <MESSAGE value="build(pubspec): add camera/image_picker" />
+    <MESSAGE value="build(gradle): minSdkVersion 21, compileSdk 31" />
+    <MESSAGE value="feat(domain): class User" />
+    <MESSAGE value="feat(firebase): Firebase Repository" />
+    <MESSAGE value="feat(firebase): FirebaseRepositoryImpl" />
+    <MESSAGE value="refactor(pages): add constructor to PhoneVerificationPage" />
+    <MESSAGE value="refactor(screens): add new states to RegistrationScreen" />
+    <MESSAGE value="refactor(pages): add semi-transparent icon on ChatPage" />
+    <MESSAGE value="docs(readme): add MIT license" />
+    <MESSAGE value="docs(readme): add demo image" />
+    <MESSAGE value="docs(readme): adjust image size|remove clutter" />
+    <MESSAGE value="docs(readme): update demo image" />
+    <MESSAGE value="build(pubspec): add contacts_service" />
+    <MESSAGE value="feat(domain): ContactEntity" />
+    <MESSAGE value="refactor(data): add local datasource" />
+    <MESSAGE value="feat(pages): SelectContactPage" />
+    <MESSAGE value="refactor(pages): fix ChatPage alignment|route" />
+    <MESSAGE value="feat(pages): newGroupButton, newContactButton on ContactPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(pages): newGroupButton, newContactButton on ContactPage" />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />
