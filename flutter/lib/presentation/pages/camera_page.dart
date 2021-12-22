@@ -4,6 +4,7 @@ import 'package:camera/camera.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:image_picker/image_picker.dart';
 
 class CameraPage extends StatefulWidget {
   @override
@@ -13,12 +14,14 @@ class CameraPage extends StatefulWidget {
 class _CameraPageState extends State<CameraPage> {
   late List<CameraDescription> cameras;
   late CameraController _cameraController;
-  late final List<dynamic> _gallery = [];
+  late ImagePicker _imagePicker;
+  late List<dynamic> _gallery = [];
+
   @override
   void initState() {
-    initializeCam();
-    getImages();
     super.initState();
+    initializeCam();
+    _imagePicker = ImagePicker();
   }
 
   Future<void> initializeCam() async {
@@ -31,7 +34,7 @@ class _CameraPageState extends State<CameraPage> {
   }
 
   Future<void> getImages() async {
-    // CustomImagePicker.getAllImages.then((value) {
+    // _ImagePicker.getAllImages.then((value) {
     //   setState(() {
     //     _gallery = value;
     //   });
@@ -41,7 +44,7 @@ class _CameraPageState extends State<CameraPage> {
   @override
   Widget build(BuildContext context) {
     if (!_cameraController.value.isInitialized) {
-      return Container(
+      return const SizedBox(
         height: 0.0,
         width: 0.0,
       );
@@ -49,7 +52,7 @@ class _CameraPageState extends State<CameraPage> {
     return Scaffold(
       body: Stack(
         children: <Widget>[
-          Container(
+          SizedBox(
             height: double.infinity,
             width: double.infinity,
             child: CameraPreview(_cameraController),
@@ -97,7 +100,7 @@ class _CameraPageState extends State<CameraPage> {
       bottom: 100,
       right: 0,
       left: 0,
-      child: Container(
+      child: SizedBox(
         height: 55,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
